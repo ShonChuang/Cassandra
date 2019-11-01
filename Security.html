@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cassandra 筆記</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/Cassandra/assets/css/0.styles.c433b53c.css" as="style"><link rel="preload" href="/Cassandra/assets/js/app.e2f0342c.js" as="script"><link rel="preload" href="/Cassandra/assets/js/2.2effd283.js" as="script"><link rel="preload" href="/Cassandra/assets/js/10.3fd2f61f.js" as="script"><link rel="prefetch" href="/Cassandra/assets/js/11.31e7f102.js"><link rel="prefetch" href="/Cassandra/assets/js/12.6cffe9c8.js"><link rel="prefetch" href="/Cassandra/assets/js/3.2762568d.js"><link rel="prefetch" href="/Cassandra/assets/js/4.f3628d87.js"><link rel="prefetch" href="/Cassandra/assets/js/5.89150edf.js"><link rel="prefetch" href="/Cassandra/assets/js/6.96203600.js"><link rel="prefetch" href="/Cassandra/assets/js/7.ecd9b75b.js"><link rel="prefetch" href="/Cassandra/assets/js/8.2c3d0573.js"><link rel="prefetch" href="/Cassandra/assets/js/9.e7bc7365.js">
+    <link rel="stylesheet" href="/Cassandra/assets/css/0.styles.c433b53c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Cassandra/" class="home-link router-link-active"><!----> <span class="site-name">Cassandra 筆記</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Cassandra/" class="nav-link">首頁</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Cassandra/" class="nav-link">首頁</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/Cassandra/" class="sidebar-link">Cassandra</a></li><li><a href="/Cassandra/Start.html" class="sidebar-link">開始使用</a></li><li><a href="/Cassandra/Security.html" class="active sidebar-link">安全性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Cassandra/Security.html#tls-ssl-加密" class="sidebar-link">TLS/SSL 加密</a></li><li class="sidebar-sub-header"><a href="/Cassandra/Security.html#ssl-認證即時重載" class="sidebar-link">SSL 認證即時重載</a></li><li class="sidebar-sub-header"><a href="/Cassandra/Security.html#認證" class="sidebar-link">認證</a></li><li class="sidebar-sub-header"><a href="/Cassandra/Security.html#授權" class="sidebar-link">授權</a></li><li class="sidebar-sub-header"><a href="/Cassandra/Security.html#快取" class="sidebar-link">快取</a></li></ul></li><li><a href="/Cassandra/Consistency.html" class="sidebar-link">可調整的一致性</a></li><li><a href="/Cassandra/Dbeavergui.html" class="sidebar-link">GUI 管理介面</a></li><li><a href="/Cassandra/Other.html" class="sidebar-link">其他</a></li><li><a href="/Cassandra/Result.html" class="sidebar-link">相關資源</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>Cassandra 提供了三種安全性功能的組件設定：</p> <ul><li>TLS/SSL 叢集間的連線加密</li> <li>客戶端認證</li> <li>一般授權認證</li></ul> <p>Cassandra預設是<strong>不啟用</strong>該功能，是為了容易示使用找尋到其他在叢集中的節點。</p> <h2 id="tls-ssl-加密"><a href="#tls-ssl-加密" aria-hidden="true" class="header-anchor">#</a> TLS/SSL 加密</h2> <p>Cassandra 提供的安全連線機制，如<strong>客戶端與資料庫連線加密</strong>或者叢集中的<strong>客戶端對節點</strong>、<strong>節點對節點</strong>的連線加密，且這些設定可以<strong>單獨管理與設定</strong>。</p> <p>這些加密設定可以透過修改 <strong>cassandra.yaml</strong> 調整，就會覆蓋JVM的設定，但不建議著麼做，除非你有特殊的需求。
+<strong>預設驗證關閉</strong></p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token comment"># Authentication backend, implementing IAuthenticator; used to identify users</span>
+<span class="token comment"># Out of the box, Cassandra provides org.apache.cassandra.auth.{AllowAllAuthenticator,</span>
+<span class="token comment"># PasswordAuthenticator}.</span>
+<span class="token comment">#</span>
+<span class="token comment"># - AllowAllAuthenticator performs no checks - set it to disable authentication.</span>
+<span class="token comment"># - PasswordAuthenticator relies on username/password pairs to authenticate</span>
+<span class="token comment">#   users. It keeps usernames and hashed passwords in system_auth.roles table.</span>
+<span class="token comment">#   Please increase system_auth keyspace replication factor if you use this authenticator.</span>
+<span class="token comment">#   If using PasswordAuthenticator, CassandraRoleManager must also be used (see below)</span>
+<span class="token key atrule">authenticator</span><span class="token punctuation">:</span> AllowAllAuthenticator
+
+<span class="token comment"># Authorization backend, implementing IAuthorizer; used to limit access/provide permissions</span>
+<span class="token comment"># Out of the box, Cassandra provides org.apache.cassandra.auth.{AllowAllAuthorizer,</span>
+<span class="token comment"># CassandraAuthorizer}.</span>
+<span class="token comment">#</span>
+<span class="token comment"># - AllowAllAuthorizer allows any action to any user - set it to disable authorization.</span>
+<span class="token comment"># - CassandraAuthorizer stores permissions in system_auth.role_permissions table. Please</span>
+<span class="token comment">#   increase system_auth keyspace replication factor if you use this authorizer.</span>
+<span class="token key atrule">authorizer</span><span class="token punctuation">:</span> AllowAllAuthorizer
+</code></pre></div><p><strong>資料傳輸加密設定</strong></p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">transparent_data_encryption_options</span><span class="token punctuation">:</span>
+<span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">chunk_length_kb</span><span class="token punctuation">:</span> <span class="token number">64</span>
+<span class="token key atrule">cipher</span><span class="token punctuation">:</span> AES/CBC/PKCS5Padding
+<span class="token key atrule">key_alias</span><span class="token punctuation">:</span> testing<span class="token punctuation">:</span><span class="token number">1</span>
+<span class="token comment"># CBC IV length for AES needs to be 16 bytes (which is also the default size)</span>
+<span class="token comment"># iv_length: 16</span>
+<span class="token key atrule">key_provider</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">class_name</span><span class="token punctuation">:</span> org.apache.cassandra.security.JKSKeyProvider
+    <span class="token key atrule">parameters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">keystore</span><span class="token punctuation">:</span> conf/.keystore
+        <span class="token key atrule">keystore_password</span><span class="token punctuation">:</span> cassandra
+        <span class="token key atrule">store_type</span><span class="token punctuation">:</span> JCEKS
+        <span class="token key atrule">key_password</span><span class="token punctuation">:</span> cassandra
+</code></pre></div><p><strong>Server/Client 加密選項</strong></p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">server_encryption_options</span><span class="token punctuation">:</span>
+<span class="token key atrule">internode_encryption</span><span class="token punctuation">:</span> none
+<span class="token key atrule">keystore</span><span class="token punctuation">:</span> conf/.keystore
+<span class="token key atrule">keystore_password</span><span class="token punctuation">:</span> cassandra
+<span class="token key atrule">truststore</span><span class="token punctuation">:</span> conf/.truststore
+<span class="token key atrule">truststore_password</span><span class="token punctuation">:</span> cassandra
+<span class="token comment"># More advanced defaults below:</span>
+<span class="token comment"># protocol: TLS</span>
+<span class="token comment"># algorithm: SunX509</span>
+<span class="token comment"># store_type: JKS</span>
+<span class="token comment"># cipher_suites: [TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_DHE_RSA_WITH_AES_128_CBC_SHA,TLS_DHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]</span>
+<span class="token comment"># require_client_auth: false</span>
+<span class="token comment"># require_endpoint_verification: false</span>
+
+<span class="token comment"># enable or disable client/server encryption.</span>
+<span class="token key atrule">client_encryption_options</span><span class="token punctuation">:</span>
+<span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token comment"># If enabled and optional is set to true encrypted and unencrypted connections are handled.</span>
+<span class="token key atrule">optional</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">keystore</span><span class="token punctuation">:</span> conf/.keystore
+<span class="token key atrule">keystore_password</span><span class="token punctuation">:</span> cassandra
+<span class="token comment"># require_client_auth: false</span>
+<span class="token comment"># Set trustore and truststore_password if require_client_auth is true</span>
+<span class="token comment"># truststore: conf/.truststore</span>
+<span class="token comment"># truststore_password: cassandra</span>
+<span class="token comment"># More advanced defaults below:</span>
+<span class="token comment"># protocol: TLS</span>
+<span class="token comment"># algorithm: SunX509</span>
+<span class="token comment"># store_type: JKS</span>
+<span class="token comment"># cipher_suites: [TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_DHE_RSA_WITH_AES_128_CBC_SHA,TLS_DHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]</span>
+    
+</code></pre></div><h2 id="ssl-認證即時重載"><a href="#ssl-認證即時重載" aria-hidden="true" class="header-anchor">#</a> SSL 認證即時重載</h2> <p>Cassandra 4 提供了 SSL 認證及重載。如果於 cassandra.yaml 已啟用 SSL/TSL 加密服務，叢集節點輪詢服務與金鑰存取服務。若檔案異動則會啟用完成(<em>零停機修改設定，這在微服務環境中種要</em>)。輪詢時間預設為10分鐘(<em>尚未找到該設定</em>)。
+也可以透過指令方式觸發立即重載 <span style="padding:2px 4px;color:#c7254e;background-color:#f9f2f4;border-radius:4px;">nodetool reloadssl</span>。</p> <h4 id="設定節點加密"><a href="#設定節點加密" aria-hidden="true" class="header-anchor">#</a> 設定節點加密</h4> <p>在 cassandra.yaml 找到 <strong>server_encryption_option</strong> 區段</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code>    <span class="token key atrule">server_encryption_options</span><span class="token punctuation">:</span>
+    <span class="token key atrule">internode_encryption</span><span class="token punctuation">:</span> none //設定 racl、dc、all
+    <span class="token key atrule">keystore</span><span class="token punctuation">:</span> conf/.keystore
+    <span class="token key atrule">keystore_password</span><span class="token punctuation">:</span> cassandra
+    <span class="token key atrule">truststore</span><span class="token punctuation">:</span> conf/.truststore
+    <span class="token key atrule">truststore_password</span><span class="token punctuation">:</span> cassandra
+</code></pre></div><h4 id="設定客戶端對節點加密"><a href="#設定客戶端對節點加密" aria-hidden="true" class="header-anchor">#</a> 設定客戶端對節點加密</h4> <p>在 cassandra.yaml 找到 <strong>client_encryption_options</strong> 區段</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code>    <span class="token key atrule">client_encryption_options</span><span class="token punctuation">:</span>
+    <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token comment"># If enabled and optional is set to true encrypted and unencrypted connections are handled.</span>
+    <span class="token key atrule">optional</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+    <span class="token key atrule">keystore</span><span class="token punctuation">:</span> conf/.keystore
+    <span class="token key atrule">keystore_password</span><span class="token punctuation">:</span> cassandra
+</code></pre></div><p>這裡有兩個參數可以設定 <strong>enable</strong> 與 <strong>optional</strong>，代表的連線加密規則不一樣。</p> <table><thead><tr><th style="text-align:center;">enable</th> <th style="text-align:center;">optional</th> <th style="text-align:center;">連線</th></tr></thead> <tbody><tr><td style="text-align:center;">false</td> <td style="text-align:center;">false</td> <td style="text-align:center;">未加密</td></tr> <tr><td style="text-align:center;">true</td> <td style="text-align:center;">false</td> <td style="text-align:center;">加密</td></tr> <tr><td style="text-align:center;">true</td> <td style="text-align:center;">true</td> <td style="text-align:center;">未加密、加密</td></tr></tbody></table> <p>optional 可以透過設定不同的port來設定連線方式：
+將 <em>optional</em> 設為 false 然後將 <em>native_transport_port_ssl</em> 指定對應的 port</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">native_transport_port_ssl</span><span class="token punctuation">:</span> <span class="token number">9142</span>
+</code></pre></div><div class="tip custom-block"><p>native_transport_port：9042(預設連線Port為)
+storage_port：7000
+ssl_storage_port：7001</p></div> <p>##角色
+Cassandra 使用資料庫裡的角色來管理，使用資料庫的帳號與群組，與授權或權限，預設 <strong>role_manager</strong> 是使用 <strong>CassandraRoleManager</strong> 這個角色管理。</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token comment"># - CassandraRoleManager stores role data in the system_auth keyspace. Please</span>
+<span class="token comment">#   increase system_auth keyspace replication factor if you use this role manager.</span>
+<span class="token key atrule">role_manager</span><span class="token punctuation">:</span> CassandraRoleManager
+</code></pre></div><h2 id="認證"><a href="#認證" aria-hidden="true" class="header-anchor">#</a> 認證</h2> <p>預設為 <strong>AllowAllAuthenricator</strong> 代表無須認證。</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">authenticator</span><span class="token punctuation">:</span> AllowAllAuthenticator
+</code></pre></div><p>改為預設 <strong>PasswordAuthenticator</strong> 簡單密碼認證，密碼將會加密儲存在 system table 中。</p> <h4 id="設定密碼認證"><a href="#設定密碼認證" aria-hidden="true" class="header-anchor">#</a> 設定密碼認證</h4> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">&gt;</span> cqlsh  <span class="token comment"># 進入 cqlsh</span>
+cqlsh<span class="token punctuation">&gt;</span> DESCRIBE system_auth <span class="token comment"># 查詢system_auth 結構</span>
+
+CREATE KEYSPACE system_auth WITH replication = <span class="token punctuation">{</span><span class="token key atrule">'class'</span><span class="token punctuation">:</span> <span class="token string">'SimpleStrategy'</span><span class="token punctuation">,</span> <span class="token key atrule">'replication_factor'</span><span class="token punctuation">:</span> <span class="token string">'1'</span><span class="token punctuation">}</span>  AND durable_writes = true;
+
+<span class="token comment"># 預設 keyspace 使用 SimpleStrategy 與 replication_factor 為 1，</span>
+<span class="token comment"># 修改建立副本方式</span>
+<span class="token comment"># DC1 與 DC2 為3個節點</span>
+cqlsh<span class="token punctuation">&gt;</span> ALTER KEYSPACE system_auth WITH replication = <span class="token punctuation">{</span><span class="token key atrule">'class'</span><span class="token punctuation">:</span> <span class="token string">'NetworkTopologyStrategy'</span><span class="token punctuation">,</span> <span class="token key atrule">'DC1'</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token key atrule">'DC2'</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">}</span>;
+
+<span class="token comment"># 修改 cassandra.yaml</span>
+cqlsh<span class="token punctuation">&gt;</span> vi /etc/cassandra/cassandra.yaml
+<span class="token key atrule">authenticator</span><span class="token punctuation">:</span> PasswordAuthenticator
+
+<span class="token comment"># 重新啟動 node</span>
+<span class="token comment"># 退出cassandra docker </span>
+<span class="token comment"># 執行 docker restart images name</span>
+
+<span class="token comment">#再次進入 cqlsh 使用系統管理員登入</span>
+<span class="token punctuation">&gt;</span> cqlsh <span class="token punctuation">-</span>u cassandra <span class="token punctuation">-</span>p cassandra
+
+<span class="token comment">## 建立新的管理員帳號角色</span>
+cassandra@cqlsh<span class="token punctuation">&gt;</span> CREATE ROLE dba WITH SUPERUSER = true AND LOGIN = true AND PASSWORD = 'super';
+
+<span class="token comment"># 重新開啟新的 cqlsh 並使用新的管理員帳號登入</span>
+<span class="token punctuation">&gt;</span> cqlsh <span class="token punctuation">-</span>u dba <span class="token punctuation">-</span>p super
+
+<span class="token comment"># 查詢 role table</span>
+dba@cqlsh<span class="token punctuation">&gt;</span> List ROLES;
+
+ role      <span class="token punctuation">|</span> can_login <span class="token punctuation">|</span> is_superuser <span class="token punctuation">|</span> member_of <span class="token punctuation">|</span> salted_hash
+<span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">-</span><span class="token punctuation">-</span>+<span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">-</span><span class="token punctuation">-</span>+<span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">-</span><span class="token punctuation">-</span>+<span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">-</span><span class="token punctuation">-</span>+<span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">---</span><span class="token punctuation">-</span><span class="token punctuation">-</span>
+       dba <span class="token punctuation">|</span>      True <span class="token punctuation">|</span>         True <span class="token punctuation">|</span>      null <span class="token punctuation">|</span> $2a$10$a32Ml1gFD2.05R8NcQdniuwZWdaCxv/hqUWGPzAR6kk6ja5AnYRUO
+ cassandra <span class="token punctuation">|</span>      True <span class="token punctuation">|</span>         True <span class="token punctuation">|</span>      null <span class="token punctuation">|</span> $2a$10$iIzmj16UWvMJm3nTxoNWLu/MeS2tuVNsmm329/Wyjnsn1MrhqFgK6
+
+<span class="token comment"># 將預設的 cassandra 取消管理員權限</span>
+dba@cqlsh<span class="token punctuation">&gt;</span> ALTER ROLE cassandra WITH SUPERUSER = false AND LOGIN = false;
+
+</code></pre></div><p>完成，若有使用叢集，請確認每個節點都有更新。</p> <h2 id="授權"><a href="#授權" aria-hidden="true" class="header-anchor">#</a> 授權</h2> <p>預設為 <strong>AllowAllAuthorizer</strong> 代表無須授權。
+改為預設 <strong>CassandraAuthorizer</strong> 給予管理者授權，功能存到系統表中</p> <h4 id="設定內部授權"><a href="#設定內部授權" aria-hidden="true" class="header-anchor">#</a> 設定內部授權</h4> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token comment"># 開啟 cassandra.yaml，修改 authorizer </span>
+<span class="token key atrule">authorizer</span><span class="token punctuation">:</span> CassandraAuthorizer
+<span class="token comment"># 重新啟動 node</span>
+<span class="token comment"># 退出cassandra docker </span>
+<span class="token comment"># 執行 docker restart images name</span>
+
+<span class="token comment">#再次進入 cqlsh 使用系統管理員登入</span>
+<span class="token punctuation">&gt;</span> cqlsh <span class="token punctuation">-</span>u dba <span class="token punctuation">-</span>p super
+dba@cqlsh<span class="token punctuation">&gt;</span> 
+
+<span class="token comment"># 使用 Grant 改變權限，其他的叢集節點直到更新(重複1、2步驟)或者節點重新啟動，這樣不會影像到客戶端連線。</span>
+<span class="token comment"># 假設已經有 keyspace = mytest , table = t1 , db_user=dba</span>
+dba@cqlsh<span class="token punctuation">&gt;</span> gaant select on mytest.t1 To dba;
+
+<span class="token comment">#查詢設定的權限</span>
+dba@cqlsh<span class="token punctuation">&gt;</span> List All Pressions of dba;
+
+</code></pre></div><h2 id="快取"><a href="#快取" aria-hidden="true" class="header-anchor">#</a> 快取</h2> <p>啟用認證與授權機制將會頻繁地讀取<strong>sysem_auth</strong> 資料表，且連線會有需多使用者操作，將會容易造成服務競爭碰撞，透過設定快取緩存可以減輕認證、授權、權限和角色的負載。
+每個快取緩存有三個選項設定：</p> <ul><li>Validiry Period ：設定有快取效期間，過期後會由快取中刪除</li> <li>Refresh Rate ：設定背景底層更新頻率，將會非同步執行更新</li> <li>Max Entries ：快取的儲存大小</li></ul> <p>開啟 cassandra.yaml 將會有三種類型的快取，但都離不開上述三種選項：</p> <ul><li>&lt;type&gt;_validity_in_ms</li> <li>&lt;type&gt;_update_interval_in_ms</li> <li>&lt;type&gt;_cache_max_entries 這設定因該改變，為 <em>key_cache_size_in_mb</em> 與 <em>row_cache_size_in_mb</em></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Cassandra/Start.html" class="prev">開始使用</a></span> <span class="next"><a href="/Cassandra/Consistency.html">可調整的一致性</a>→
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Cassandra/assets/js/app.e2f0342c.js" defer></script><script src="/Cassandra/assets/js/2.2effd283.js" defer></script><script src="/Cassandra/assets/js/10.3fd2f61f.js" defer></script>
+  </body>
+</html>
